@@ -10,6 +10,7 @@ import { Loader2, Upload, CheckCircle } from "lucide-react";
 interface TeacherFormData {
   teacherName: string;
   teacherEmail: string;
+  questionId: string;
   question: string;
   modelAnswer: string;
   maxMarks: number;
@@ -19,6 +20,7 @@ export const TeacherForm = () => {
   const [formData, setFormData] = useState<TeacherFormData>({
     teacherName: "",
     teacherEmail: "",
+    questionId: "",
     question: "",
     modelAnswer: "",
     maxMarks: 10,
@@ -31,7 +33,7 @@ export const TeacherForm = () => {
     e.preventDefault();
     
     // Validate required fields
-    if (!formData.teacherName || !formData.teacherEmail || !formData.question || !formData.modelAnswer) {
+    if (!formData.teacherName || !formData.teacherEmail || !formData.questionId || !formData.question || !formData.modelAnswer) {
       toast({
         title: "Missing Information",
         description: "Please fill in all required fields.",
@@ -63,6 +65,7 @@ export const TeacherForm = () => {
           setFormData({
             teacherName: "",
             teacherEmail: "",
+            questionId: "",
             question: "",
             modelAnswer: "",
             maxMarks: 10,
@@ -135,6 +138,18 @@ export const TeacherForm = () => {
                 required
               />
             </div>
+          </div>
+
+          <div className="space-y-2">
+            <Label htmlFor="questionId">Question ID *</Label>
+            <Input
+              id="questionId"
+              type="text"
+              placeholder="Enter unique question ID (e.g., Q001, MATH-01)"
+              value={formData.questionId}
+              onChange={(e) => handleInputChange("questionId", e.target.value)}
+              required
+            />
           </div>
 
           <div className="space-y-2">
