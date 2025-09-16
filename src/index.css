@@ -11,13 +11,13 @@ All colors MUST be HSL.
     --background: 245 100% 99%;
     --foreground: 222.2 84% 4.9%;
 
-    --card: 0 0% 100%;
+    --card: 210 20% 96%;
     --card-foreground: 222.2 84% 4.9%;
 
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 210 100% 45%;
+    --primary: 234 89% 59%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 195 100% 95%;
@@ -37,9 +37,9 @@ All colors MUST be HSL.
     --ring: 210 100% 45%;
 
     /* Education theme colors */
-    --education-primary: 210 100% 45%;
-    --education-secondary: 195 100% 45%;
-    --education-accent: 165 100% 45%;
+    --education-primary: 234 89% 59%;
+    --education-secondary: 160 84% 39%;
+    --education-accent: 289 100% 50%;
     --education-gradient: linear-gradient(135deg, hsl(210 100% 45%), hsl(195 100% 45%));
     --education-gradient-light: linear-gradient(135deg, hsl(210 100% 95%), hsl(195 100% 95%));
     

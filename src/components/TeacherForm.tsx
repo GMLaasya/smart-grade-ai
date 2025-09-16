@@ -45,7 +45,7 @@ export const TeacherForm = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch("https://lucky0045.app.n8n.cloud/webhook-test/1ffe6871-1e36-4840-a919-1dc67034210d", {
+      const response = await fetch("https://lucky0045.app.n8n.cloud/webhook/1ffe6871-1e36-4840-a919-1dc67034210d", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
