@@ -136,7 +136,7 @@ export const StudentForm = () => {
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="questionId">Question ID *</Label>
+              <Label htmlFor="questionId">QID</Label>
               <Input
                 id="questionId"
                 type="text"
