@@ -48,7 +48,7 @@ export const StudentForm = () => {
     setAiResponse(null);
 
     try {
-      const response = await fetch("https://lucky0045.app.n8n.cloud/webhook-test/216b3332-5fad-483a-85cf-7fa986fcaaa5", {
+      const response = await fetch("https://lucky0045.app.n8n.cloud/webhook/216b3332-5fad-483a-85cf-7fa986fcaaa5", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
